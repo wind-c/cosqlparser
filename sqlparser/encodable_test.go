@@ -20,7 +20,7 @@ import (
 	"strings"
 	"testing"
 
-	"cosqlparser/sqltypes"
+	"github.com/wind-c/cosqlparser/sqltypes"
 )
 
 func TestEncodable(t *testing.T) {

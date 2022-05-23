@@ -86,7 +86,6 @@ limitations under the License.
 package coerrors
 
 import (
-	"flag"
 	"fmt"
 	"io"
 
@@ -96,10 +95,6 @@ import (
 // LogErrStacks controls whether or not printing errors includes the
 // embedded stack trace in the output.
 var LogErrStacks bool
-
-func init() {
-	flag.BoolVar(&LogErrStacks, "log_err_stacks", false, "log stack traces for errors")
-}
 
 // New returns an error with the supplied message.
 // New also records the stack trace at the point it was called.
